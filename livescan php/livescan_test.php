@@ -7,10 +7,11 @@ require_once ('FileMaker.php');
 
 $fm = new FileMaker();
 $fm->setProperty('database', 'livescan_psm');
-#$fm->setProperty('hostspec', 'https://basx.ucsc.edu');
+#$fm->setProperty('hostspec', '********');
 $fm->setProperty('username', 'data_entry');
-$fm->setProperty('password', 'changeme');
+$fm->setProperty('password', '**********');
 
+// query the DB for the layouts and output the name 
 $layouts = $fm->listLayouts();
 // If an error is found, return a message and exit.
 if (FileMaker::isError($layouts)) {
