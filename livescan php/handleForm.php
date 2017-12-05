@@ -31,10 +31,11 @@ require_once("FileMaker.php");
 $fm =& new FileMaker();
 $fm->setProperty('database', 'livescan_psm');
 $fm->setProperty('username', 'data_entry');
-$fm->setProperty('password', 'changeme');
+$fm->setProperty('password', '********');
 
 
 // Field names we expect as keys in $_POST[]
+// NOTE: if using a dynamic foreach loop to get fields from layout, the name element needs to match in this $keys array
 $keys = array(
 		'First',
 		'Last',
