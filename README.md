@@ -6,5 +6,7 @@ Some of the interesting points to remember are that FMP uses layouts; layouts co
 
 Translating desing patterns that I was familiar with in terms of posting data via web forms, I was back to using a model that included a php file for creating the form and a php file for processing and validating and inserting the data and finally some type of header relocation to drop the user on the correct page.
 
+The **addRecord** file uses a very simple HTML based form. What's important to remember is that we need to match up the name of the input element to the same name used by the field in the FMP db. That is "Name" != "name". Many of the examples I saw used an id for the element and didn't include name attribute; be advised.
 
+In a different example, the **livescan_test** file, we get a little more fancy.
 
